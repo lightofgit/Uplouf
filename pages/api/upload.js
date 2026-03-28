@@ -41,7 +41,7 @@ export default async function handler(req, res) {
 
     const form = new FormData();
 
-    for (let i = 1; i <= 999; i++) {
+    for (let i = 1; i <= 449; i++) {
       const content = Buffer.from(buildMetadata(i), "utf-8");
       form.append("file", content, {
         filename: `metadata/${i}.json`,
